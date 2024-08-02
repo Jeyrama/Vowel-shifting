@@ -21,3 +21,6 @@ If text is null or empty,
 return exactly this value.
 Vowels are "a,e,i,o,u".
 */
+
+
+// Solution
