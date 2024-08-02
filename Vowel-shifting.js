@@ -24,3 +24,10 @@ Vowels are "a,e,i,o,u".
 
 
 // Solution
+
+const vowelShift = (text, n) => {
+  if (!text) return text;
+  let arr = text.match(/[aeiou]/gi) || [];
+  arr = arr.slice(-n % arr.length).concat(arr.slice(0, -n % arr.length));
+  return text.replace(/[aeuio]/gi, _ => arr.shift());
+};
