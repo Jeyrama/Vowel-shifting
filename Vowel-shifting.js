@@ -31,3 +31,5 @@ const vowelShift = (text, n) => {
   arr = arr.slice(-n % arr.length).concat(arr.slice(0, -n % arr.length));
   return text.replace(/[aeuio]/gi, _ => arr.shift());
 };
+
+// or
